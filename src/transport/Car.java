@@ -5,17 +5,17 @@ import java.util.Objects;
 
 public class Car {
 
-    final String brand;
-    final String model;
-    double engineVolume;
-    String color;
-    final int year;
-    final String country;
-    String transmission;
-    final String bodyStyle;
-    String registrationNumber;
-    final int numberOfSeats;
-    String typeOfTire;
+    public final String brand;
+    public final String model;
+    public double engineVolume;
+    public String color;
+    public final int year;
+    public final String country;
+    public String transmission;
+    public final String bodyStyle;
+    public String registrationNumber;
+    public final int numberOfSeats;
+    public String typeOfTire;
 
     public Car(String brand, String model, double engineVolume, String color, int year,
                String country, String transmission, String bodyStyle, String registrationNumber, int numberOfSeats, String typeOfTire) {
@@ -164,7 +164,7 @@ public class Car {
     }
 
     public String isThisASummerTire() {
-        String currentMonth = String.valueOf(LocalDate.now().getMonth());
+         String currentMonth = String.valueOf(LocalDate.now().getMonth());
         switch (currentMonth) {
             case "JANUARY":
             case "FEBRUARY":
